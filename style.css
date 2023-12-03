@@ -1,0 +1,228 @@
+/* Mohammed's Personal Website (Hosted via GitHub) */
+/* 2023 MOHAMMED. All rights reserved. Unauthorized copying and pasting of the content of this website is prohibited. */
+/* Version 2.0 */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+html, body{
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  color:#222;
+  padding: 1%;
+  user-select: none;
+  /* background-color: #222; */
+  /* border-color: 5px; */
+}
+
+.para {
+  font-size: 1.125rem;
+}
+
+/* .col-md-4 {
+  box-shadow:  1px 1px 5px rgb(177, 6, 6);
+} */
+
+h2 {
+  font-size: 1.475rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar{
+  padding: .8rem;
+  
+
+  /* background: linear-gradient(rgb(232, 229, 229), rgb(195, 194, 194)); */
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 999; /* This ensures the navbar stays on top of other elements */
+
+  /* font-weight: 900; */
+
+  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+}
+
+.navbar-brand img {
+  width: 70px;
+  height: 70px;
+  box-shadow: 2px 2px 5px rgb(22, 21, 21);
+  
+  /* border-radius: 50%; */
+  
+  /* Initial zoom level (e.g., 1.5x) */
+  /* transform: scale(1.5);
+  /* Zoom origin set to center */
+  /* transform-origin: center; */ 
+  /* Offset the zoomed image to reveal the center portion */
+  /* transform: translateX(-25%);
+  transform: translateY(-25%); */
+}
+
+.navbar-nav li {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.navbar-nav li:hover {
+  color:rgb(227, 30, 63);
+}
+
+.nav-link{
+  font-size: 1.1em !important;
+}
+
+.btn-primary {
+  background-color: #6648b1;
+  border: 1px solid #564d7c;
+}
+
+.btn-primary:hover {
+  background-color: #563d7c;
+  border: 1px solid #563d7c;
+}
+
+.padding {
+  padding-bottom: 2rem;
+} 
+
+.welcome {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.welcome hr {
+  border-top: 2px solid #b4b4b4;
+  width: 95%;
+  margin-top: .3rem;
+  margin-bottom: 1rem;
+}
+
+.fa-code {
+  color: #e54d26;
+}
+
+.fa-bold {
+  color: #563d7c;
+}
+
+.fa-css3 {
+  color: #2a63af;
+}
+
+.fa-code, .fa-bold, .fa-css3 {
+  font-size: 4em;
+  margin: 1rem;
+}
+
+.fun{
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.gif {
+  max-width: 100%;
+}
+
+.social a {
+  font-size: 4.5em;
+  padding: 3rem;
+  color: black;
+}
+
+.social a:hover {
+  color: rgb(76, 83, 84);
+}
+/* .fa-facebook {
+  color: #3b5998;
+}
+/* .fa-facebook:hover,{
+  color: #d5d5d5;
+} */
+
+footer {
+  background-color: #070707;
+  color: #d5d5d5;
+  padding-top: 2rem;
+  font-size: .75rem;
+}
+
+hr.light {
+  border-top: 1px solid #d5d5d5;
+  width: 75%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+
+footer a {
+  color: #d5d5d5;
+}
+
+hr.light-100 {
+  border-top: 1px solid #d5d5d5;
+  width: 100%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+
+.footer-image img{
+  width: 150px;
+  height: 60px;
+}
+
+/* h2 {
+  font-size: 1.875rem;
+} */
+
+/*---Media Queries --*/
+
+@media (max-width: 992px) {
+  .social a{
+    font-size: 4em;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .display-4 {
+    font-size: 150%;
+  } 
+
+  .social a{
+    font-size: 2.5em;
+    padding: 1.2rem;
+  }
+
+}
+@media (max-width: 576px) {
+
+  .display-4 {
+    font-size: 160%;
+  }
+  .social a{
+    font-size: 2em;
+    padding: 1.7rem;
+  }
+ 
+}
+
+/*---Firefox Bug Fix --*/
+/* .carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+} */
+
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
