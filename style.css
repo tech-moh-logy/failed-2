@@ -1,5 +1,6 @@
 /* Mohammed's Personal Website (Hosted via GitHub) */
 /* 2023 MOHAMMED. All rights reserved. Unauthorized copying and pasting of the content of this website is prohibited. */
+/* This work is licensed under Attribution-NonCommercial-NoDerivatives 4.0 International */
 /* Version 2.0 */
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
@@ -8,11 +9,101 @@ html, body{
   height: 100%;
   width: 100%;
   font-family: 'Poppins', sans-serif;
-  color:#222;
+  color:#f3eded;
+  background: linear-gradient(rgb(36, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), rgb(36, 0, 0));
   padding: 1%;
   user-select: none;
   /* background-color: #222; */
   /* border-color: 5px; */
+}
+
+/* .display-4  */
+/* 
+.text {
+  color: #790000;
+  text-shadow:
+
+    0 0 7px black,
+    0 0 10px black,
+    0 0 21px black,
+   
+    0 0 42px rgb(38, 32, 32),
+    0 0 92px rgb(18, 4, 4),
+    0 0 92px rgb(255, 0, 0),
+    0 0 102px rgb(39, 14, 14),
+    0 0 151px rgb(59, 2, 2);
+
+    font-weight: 350;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+} */
+
+.text b {
+
+  text-shadow: 2px 2px 2px rgb(235, 227, 227);
+
+  /* 0 0 42px rgb(38, 32, 32),
+  0 0 92px rgb(159, 31, 31),
+  0 0 92px rgb(255, 0, 0),
+  0 0 102px rgb(136, 20, 20),
+  0 0 151px rgb(59, 2, 2); */
+
+  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+  /* font-size: 60px; */
+  /* padding: 0 10px; */
+  text-transform: uppercase;
+  color: #fff;
+  animation: zoomup 2s linear infinite;
+  animation-delay: calc(250ms * var(--i));
+}
+
+@keyframes zoomup {
+  0%,
+  100% {
+    color: rgb(35, 33, 33);
+    filter: blur(1px);
+    /* text-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red,
+      0 0 40px red, 0 0 60px red, 0 0 80px red, 0 0 100px red,
+      0 0 120px red; */
+  }
+
+  5%,
+  95% {
+    filter: blur(0);
+    color: #fff;
+    text-shadow: none;
+  }
+}
+
+/* ALTERNATIVE ANIMATIONS */
+
+.typewriter p {
+  /* font-size: 3rem; */
+  /* font-weight: 200; */
+  color: rgb(233, 200, 200);
+  font-weight: bold;
+  font-style: normal;
+  overflow: hidden; 
+  /* border-right: .10em solid red; */
+  white-space: nowrap; 
+  margin: 0 auto;
+  animation: 
+    typing 6.5s steps(50, end),
+    blink-caret 0.5s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: red }
+}
+
+.card-body {
+  background-color: black;
 }
 
 .para {
@@ -24,23 +115,22 @@ html, body{
 } */
 
 h2 {
-  font-size: 1.475rem;
+  font-size: 1.575rem;
   text-transform: uppercase;
   font-weight: 900;
+  text-shadow: 2px 2px 20ps red;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .navbar{
   padding: .8rem;
   
-
-  /* background: linear-gradient(rgb(232, 229, 229), rgb(195, 194, 194)); */
+  /* background: linear-gradient(rgb(123, 20, 20), rgb(195, 194, 194)); */
 
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #fff;
   z-index: 999; /* This ensures the navbar stays on top of other elements */
 
   /* font-weight: 900; */
@@ -48,10 +138,14 @@ h2 {
   /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
 }
 
+/* #navSection {
+  background-color: #051427;
+} */
+
 .navbar-brand img {
   width: 70px;
   height: 70px;
-  box-shadow: 2px 2px 5px rgb(22, 21, 21);
+  box-shadow: 2px 2px 20px rgb(251, 4, 4);
   
   /* border-radius: 50%; */
   
@@ -64,9 +158,14 @@ h2 {
   transform: translateY(-25%); */
 }
 
+/* .nav-link {
+  color: #d5d5d5;
+} */
+
 .navbar-nav li {
   padding-right: 20px;
   padding-left: 20px;
+  /* color: #fff; */
 }
 
 .navbar-nav li:hover {
@@ -75,16 +174,25 @@ h2 {
 
 .nav-link{
   font-size: 1.1em !important;
+  /* color: #fff; */
+}
+
+.nav-link a:hover {
+  color: red;
 }
 
 .btn-primary {
-  background-color: #6648b1;
-  border: 1px solid #564d7c;
+  font-size: .75rem;
+  text-transform: uppercase;
+  background-color: rgb(129, 28, 28);
+  border: 1px solid rgb(162, 19, 19);
 }
 
 .btn-primary:hover {
-  background-color: #563d7c;
-  border: 1px solid #563d7c;
+  background-color: rgb(205, 194, 194);
+  border: 1px solid rgb(105, 3, 3);
+  box-shadow: 2px 2px 20px #e54d26;
+  color: rgb(133, 15, 15);
 }
 
 .padding {
@@ -104,16 +212,25 @@ h2 {
   margin-bottom: 1rem;
 }
 
-.fa-code {
+/* SKILLS */
+.fa-code:hover {
   color: #e54d26;
+  /* color: red; */
 }
 
-.fa-bold {
+.fa-bold:hover {
   color: #563d7c;
+  /* color: red; */
 }
 
-.fa-css3 {
+.fa-css3:hover {
   color: #2a63af;
+  /* color: red; */
+}
+
+.fa-code, .fa-bold, .fa-css3 {
+  text-shadow: 2px 2xp 20px red;
+  color: rgb(173, 14, 14);
 }
 
 .fa-code, .fa-bold, .fa-css3 {
@@ -121,7 +238,7 @@ h2 {
   margin: 1rem;
 }
 
-.fun{
+.fun {
   width: 100%;
   margin-bottom: 2rem;
 }
@@ -133,11 +250,11 @@ h2 {
 .social a {
   font-size: 4.5em;
   padding: 3rem;
-  color: black;
+  color: rgb(128, 1, 1);
 }
 
 .social a:hover {
-  color: rgb(76, 83, 84);
+  color: rgb(179, 2, 2);
 }
 /* .fa-facebook {
   color: #3b5998;
@@ -182,17 +299,89 @@ hr.light-100 {
 
 /*---Media Queries --*/
 
+@media screen and (max-width: 1600px) {
+  .text b {
+    font-size: 4.75vw;
+    padding: 1.325vw;
+  }
+
+  /* p {
+    font-size: 1.875rem;
+  } */
+}
+
+@media screen and (max-width: 1500px) {
+  .text b {
+    font-size: 4.75vw;
+    padding: 1.325vw;
+  }
+  /* p {
+    font-size: 1.755rem;
+  } */
+}
+
+@media screen and (max-width: 1400px) {
+  .text b {
+    font-size: 4.75vw;
+    padding: 1.625vw;
+  }
+
+  /* p {
+    font-size: 1.425rem;
+  } */
+}
+
+@media screen and (max-width: 1300px) {
+  .text b {
+    font-size: 4.75vw;
+    padding: 1.325vw;
+  }
+
+  /* p {
+    font-size: 1.53rem;
+  } */
+}
+
+@media screen and (max-width: 1200px) {
+  .text b {
+    font-size: 4.75vw;
+    padding: 1.325vw;
+  }
+
+  /* p {
+    font-size: 1.3975rem;
+  } */
+}
+
 @media (max-width: 992px) {
+
+  .text b {
+    font-size: 4vw;
+    padding: 1.125vw;
+  }
   .social a{
     font-size: 4em;
     padding: 2rem;
   }
+
+  /* p {
+    font-size: 1.275rem;
+  } */
 }
 
 @media (max-width: 768px) {
 
+  .typewriter {
+    font-size: .885rem;
+  }
+
+  .text b {
+    font-size: 3.7vw;
+    padding: 0.75vw;
+  }
+  
   .display-4 {
-    font-size: 150%;
+    font-size: 190%;
   } 
 
   .social a{
@@ -200,19 +389,82 @@ hr.light-100 {
     padding: 1.2rem;
   }
 
+  /* p {
+    font-size: 1.35rem;
+  } */
+
 }
 @media (max-width: 576px) {
+
+  .typewriter {
+    font-size: 1.085rem;
+  }
+
+  .text b {
+    font-size: 3vw;
+    padding: 0.5vw;
+  }
 
   .display-4 {
     font-size: 160%;
   }
+
   .social a{
     font-size: 2em;
     padding: 1.7rem;
   }
+
+  /* p {
+    font-size: .975rem;
+  } */
  
 }
 
+@media (max-width: 576px) {
+
+  .typewriter {
+    font-size: .685rem;
+  }
+  .text b {
+    font-size: 2.75vw;
+    padding: 0.45vw;
+  }
+ 
+  /* p {
+    font-size: .875rem;
+  } */
+}
+
+@media (max-width: 500px) {
+
+  .typewriter {
+    font-size: .615rem;
+  }
+  .text b {
+    font-size: 2.75vw;
+    padding: 0.45vw;
+  }
+ 
+  /* p {
+    font-size: .725rem;
+  } */
+}
+
+@media (max-width: 450px) {
+
+  .typewriter {
+    font-size: .585rem;
+  }
+  .text b {
+    font-size: 2.75vw;
+    padding: 0.45vw;
+  }
+
+  /* p {
+    font-size: .675rem;
+  } */
+ 
+}
 /*---Firefox Bug Fix --*/
 /* .carousel-item {
   transition: -webkit-transform 0.5s ease;
